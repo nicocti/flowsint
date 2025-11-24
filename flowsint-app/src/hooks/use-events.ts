@@ -5,7 +5,7 @@ import { EventLevel } from '@/types'
 import { useGraphControls } from '@/stores/graph-controls-store'
 import { queryKeys } from '@/api/query-keys'
 
-const API_URL = import.meta.env.VITE_API_URL
+const API_URL = import.meta.env.VITE_API_URL || ""
 
 
 export function useEvents(sketch_id: string | undefined) {
